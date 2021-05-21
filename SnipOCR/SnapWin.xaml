@@ -1,0 +1,16 @@
+﻿<Window x:Class="SnipOCR.SnapWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnipOCR"
+        mc:Ignorable="d"
+        Title="SnapWin" Height="450" Width="800" WindowStyle="None"  AllowsTransparency="True" Background="Transparent">
+    <Grid>
+        <InkCanvas Margin="0,0,0,0" Name="Ink" Visibility="Visible" EditingModeInverted="Select" EditingMode="Select" Cursor="Cross" MouseDown="Ink_MouseDown" MouseMove="Ink_MouseMove" MouseUp="Ink_MouseUp" MouseRightButtonDown="Ink_MouseRightButtonDown">
+
+        </InkCanvas>
+        <Border Name="Bord" Visibility="Collapsed" BorderThickness="2" HorizontalAlignment="Left"   VerticalAlignment="Top" Cursor="Cross" BorderBrush="#FF09646D"/>
+        <Button Name="Conf" Visibility="Collapsed" Content="✔" FontSize="16" HorizontalAlignment="Left" Height="22" Margin="527,347,0,0" VerticalAlignment="Top" Width="30" BorderBrush="#FF32510C" Background="#66C4EF3C" Foreground="#FF006855" Click="Conf_Click"/>
+    </Grid>
+</Window>

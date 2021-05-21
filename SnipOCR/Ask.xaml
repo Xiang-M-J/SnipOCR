@@ -1,0 +1,26 @@
+﻿<Window x:Class="SnipOCR.Ask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnipOCR"
+        mc:Ignorable="d"
+        Title="Ask" Height="160" Width="250" AllowsTransparency="True" WindowStyle="None"  ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True">
+    <Grid>
+        <Grid HorizontalAlignment="Stretch" Height="20" VerticalAlignment="Top" MouseDown="Grid_MouseDown" Background="#FFE8F1EF">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="20" Margin="10,0,0,0" TextWrapping="Wrap" Text="关闭窗口"
+                   VerticalAlignment="Top" Width="70" TextAlignment="Justify" LineHeight="12" FontWeight="Bold"
+                   TextTrimming="WordEllipsis" Cursor="None" FontSize="16" Foreground="#CC000000" FontFamily="KaiTi" />
+        </Grid>
+        <GroupBox x:Name="groupBox" Header="关闭窗口时" HorizontalAlignment="Left" Height="76" Margin="10,28,0,0" VerticalAlignment="Top" Width="228" Foreground="#FF110048" BorderBrush="#FF00578A" Background="White">
+            <StackPanel Orientation="Horizontal" Margin="0,0,-2,0">
+                <RadioButton x:Name="MiniButton" Content="最小化至托盘" HorizontalAlignment="Left" Height="18" Margin="0,20,0,0" VerticalAlignment="Top" Width="102" IsChecked="True"/>
+                <RadioButton x:Name="ExitButton" Content="直接退出程序" HorizontalAlignment="Left" Height="18" Margin="20,20,0,0" VerticalAlignment="Top" Width="94"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="Sure" Content="确定" HorizontalAlignment="Left" Height="30" Margin="130,115,0,0" VerticalAlignment="Top" Width="50"  Foreground="Black" FontSize="13" BorderBrush="{x:Null}" Click="Sure_Click"/>
+        <Button x:Name="Cancel" Content="取消" HorizontalAlignment="Left" Height="30" Margin="190,115,0,0" VerticalAlignment="Top" Width="50"  Foreground="Black" FontSize="13" BorderBrush="{x:Null}" Click="Cancel_Click"/>
+        <CheckBox x:Name="checkBox" Content="下次不要再显示" HorizontalAlignment="Left" Height="18" Margin="10,120,0,0" VerticalAlignment="Top" Width="110"/>
+
+    </Grid>
+</Window>
