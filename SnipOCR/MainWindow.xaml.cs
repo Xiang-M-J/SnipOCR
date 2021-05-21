@@ -98,7 +98,7 @@ namespace SnipOCR
             if (!System.IO.File.Exists(MyXml.XMLPATH))
             {
                 // 填入 API Key 和 Secret Key
-                MyXml.CreateXml("dvdddNhwIANX4WcUyUiuyqdN", "3p9LCExzCnFPwkVxq6A88yjn02rdWCbA");
+                MyXml.CreateXml("API Key", "Secret Key");
             }
             
             
