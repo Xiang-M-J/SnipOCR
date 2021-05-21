@@ -6,11 +6,7 @@
 4. 对XML文件进行操作的类为MyXml
 5. 在使用请先打开MainWindow.xaml.cs，在下面的程序中填入相关信息：
 ```csharp
-public partial class MainWindow : Window
-    {
-        [DllImport("gdi32")]
-        static extern int DeleteObject(IntPtr o);
-        private static MemoryStream globalMemoryStream = new System.IO.MemoryStream();
+
         public MainWindow()
         {
             InitializeComponent();
