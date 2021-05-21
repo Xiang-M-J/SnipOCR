@@ -27,7 +27,7 @@
             if (!System.IO.File.Exists(MyXml.XMLPATH))
             {
                 // 填入 API Key 和 Secret Key
-                MyXml.CreateXml("", "");
+                MyXml.CreateXml("API Key", "Secret Key");
             }
             
             
